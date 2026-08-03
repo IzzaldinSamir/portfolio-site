@@ -1,0 +1,6 @@
+# Ezzulddin Al-Sammarraie
+> Telecommunications Engineer & Systems Administrator
+
+Ezzulddin is a NOC/DevOps engineer based in Bucharest, Romania.
+He contributes to open-source infrastructure projects including Canonical's LXD container engine and LibreDesk.
+Contact: izzaldinsamir@gmail.com
