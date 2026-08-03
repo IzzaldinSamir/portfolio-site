@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ezzulddin Al-Sammarraie | Telecommunications Engineer & Systems Administrator">
+    <meta name="description" content="Ezzulddin Al-Sammarraie | Telecommunications Engineer, NOC, and Systems Administrator based in Bucharest.">
     <title>Ezzulddin.sys // Terminal</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,9 +13,9 @@
             --bg-black: #000000;
             --term-bg: #050505;
             --text-main: #E2E8F0;
-            --text-muted: #64748B;
-            --neon-cyan: #00F0FF;
-            --neon-pink: #FF003C;
+            --text-muted: #94A3B8; /* Brightened to pass Lighthouse contrast checks */
+            --neon-cyan: #00E5FF;
+            --neon-pink: #FF0055;
             --neon-green: #00FF66;
             --border-color: #1E293B;
         }
@@ -87,11 +87,11 @@
         .prompt {
             color: var(--neon-cyan);
             font-weight: 700;
-            text-shadow: 0 0 8px rgba(0, 240, 255, 0.3);
+            text-shadow: 0 0 8px rgba(0, 229, 255, 0.3);
         }
 
         .command {
-            color: #fff;
+            color: #ffffff;
         }
 
         .output {
@@ -104,18 +104,19 @@
             color: var(--neon-green);
         }
 
-        .title-name {
+        h1.title-name {
             font-size: 2.2rem;
             font-weight: 700;
-            color: #fff;
+            color: #ffffff;
             margin-bottom: 5px;
             letter-spacing: -1px;
         }
 
-        .title-sub {
+        h2.title-sub {
             color: var(--text-muted);
             font-size: 1rem;
             margin-bottom: 20px;
+            font-weight: 400;
         }
 
         a {
@@ -125,9 +126,17 @@
             transition: all 0.2s ease;
         }
 
-        a:hover {
-            color: #fff;
+        a:hover, a:focus {
+            color: #ffffff;
             text-shadow: 0 0 8px var(--neon-cyan);
+            outline: none;
+        }
+        
+        /* Accessibility focus state for keyboard navigation */
+        a:focus-visible {
+            outline: 2px solid var(--neon-pink);
+            outline-offset: 4px;
+            border-radius: 2px;
         }
 
         ul {
@@ -163,14 +172,16 @@
 
         @media (max-width: 600px) {
             .terminal-body { padding: 20px; }
-            .title-name { font-size: 1.8rem; }
+            h1.title-name { font-size: 1.8rem; }
         }
     </style>
 </head>
 <body>
 
-    <div class="terminal-container">
-        <div class="terminal-header">
+    <!-- Semantic main tag for Accessibility -->
+    <main class="terminal-container">
+        <!-- aria-hidden stops screen readers from reading decorative terminal buttons -->
+        <div class="terminal-header" aria-hidden="true">
             <div class="mac-buttons">
                 <div class="mac-button close"></div>
                 <div class="mac-button minimize"></div>
@@ -180,11 +191,11 @@
         </div>
 
         <div class="terminal-body">
-            <div class="title-name">Ezzulddin Al-Sammarraie</div>
-            <div class="title-sub">Telecommunications Engineer | M.Sc. Student in Security Management @ UPB</div>
+            <h1 class="title-name">Ezzulddin Al-Sammarraie</h1>
+            <h2 class="title-sub">Telecommunications Engineer | M.Sc. Security Management @ UPB</h2>
 
             <div>
-                <span class="prompt">ezzulddin@noc:~$</span> <span class="command">cat info.txt</span>
+                <span class="prompt" aria-hidden="true">ezzulddin@noc:~$</span> <span class="command">cat info.txt</span>
             </div>
             <div class="output">
                 Location: Bucharest, Romania<br>
@@ -192,7 +203,7 @@
             </div>
 
             <div>
-                <span class="prompt">ezzulddin@noc:~$</span> <span class="command">ls -la /open_source/</span>
+                <span class="prompt" aria-hidden="true">ezzulddin@noc:~$</span> <span class="command">ls -la /open_source/</span>
             </div>
             <div class="output">
                 <ul>
@@ -203,19 +214,20 @@
             </div>
 
             <div>
-                <span class="prompt">ezzulddin@noc:~$</span> <span class="command">ping contacts</span>
+                <span class="prompt" aria-hidden="true">ezzulddin@noc:~$</span> <span class="command">ping contacts</span>
             </div>
             <div class="output">
-                [<a href="https://github.com/IzzaldinSamir" target="_blank">GITHUB</a>] &nbsp;&nbsp;&nbsp; 
-                [<a href="https://linkedin.com/in/izzaldinsamir" target="_blank">LINKEDIN</a>] &nbsp;&nbsp;&nbsp; 
-                [<a href="mailto:izzaldinsamir@gmail.com">EMAIL</a>]
+                <!-- rel="noopener noreferrer" fixes the Best Practices security audit -->
+                [<a href="https://github.com/IzzaldinSamir" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">GITHUB</a>] &nbsp;&nbsp;&nbsp; 
+                [<a href="https://linkedin.com/in/izzaldinsamir" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">LINKEDIN</a>] &nbsp;&nbsp;&nbsp; 
+                [<a href="mailto:izzaldinsamir@gmail.com" aria-label="Send an email">EMAIL</a>]
             </div>
 
             <div>
-                <span class="prompt">ezzulddin@noc:~$</span> <span class="cursor"></span>
+                <span class="prompt" aria-hidden="true">ezzulddin@noc:~$</span> <span class="cursor" aria-hidden="true"></span>
             </div>
         </div>
-    </div>
+    </main>
 
 </body>
 </html>
