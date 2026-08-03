@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ezzulddin Al-Sammarraie | Telecommunications Engineer & Systems Administrator">
+    <title>Ezzulddin.sys // Terminal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-black: #000000;
+            --term-bg: #050505;
+            --text-main: #E2E8F0;
+            --text-muted: #64748B;
+            --neon-cyan: #00F0FF;
+            --neon-pink: #FF003C;
+            --neon-green: #00FF66;
+            --border-color: #1E293B;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-black);
+            color: var(--text-main);
+            font-family: 'JetBrains Mono', monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .terminal-container {
+            width: 100%;
+            max-width: 850px;
+            background-color: var(--term-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.05);
+            overflow: hidden;
+        }
+
+        .terminal-header {
+            background-color: #0F172A;
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .mac-buttons {
+            display: flex;
+            gap: 8px;
+        }
+
+        .mac-button {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        .close { background-color: #FF5F56; box-shadow: 0 0 5px rgba(255, 95, 86, 0.5); }
+        .minimize { background-color: #FFBD2E; box-shadow: 0 0 5px rgba(255, 189, 46, 0.5); }
+        .expand { background-color: #27C93F; box-shadow: 0 0 5px rgba(39, 201, 63, 0.5); }
+
+        .terminal-title {
+            flex-grow: 1;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+
+        .terminal-body {
+            padding: 40px;
+            line-height: 1.7;
+        }
+
+        .prompt {
+            color: var(--neon-cyan);
+            font-weight: 700;
+            text-shadow: 0 0 8px rgba(0, 240, 255, 0.3);
+        }
+
+        .command {
+            color: #fff;
+        }
+
+        .output {
+            color: var(--text-muted);
+            margin-top: 5px;
+            margin-bottom: 25px;
+        }
+
+        .highlight {
+            color: var(--neon-green);
+        }
+
+        .title-name {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 5px;
+            letter-spacing: -1px;
+        }
+
+        .title-sub {
+            color: var(--text-muted);
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: var(--neon-cyan);
+            text-decoration: none;
+            position: relative;
+            transition: all 0.2s ease;
+        }
+
+        a:hover {
+            color: #fff;
+            text-shadow: 0 0 8px var(--neon-cyan);
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            margin-bottom: 12px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        li::before {
+            content: '>';
+            position: absolute;
+            left: 0;
+            color: var(--neon-pink);
+            font-weight: bold;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            height: 1.2em;
+            background-color: var(--text-main);
+            vertical-align: middle;
+            animation: blink 1s step-end infinite;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+
+        @media (max-width: 600px) {
+            .terminal-body { padding: 20px; }
+            .title-name { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="terminal-container">
+        <div class="terminal-header">
+            <div class="mac-buttons">
+                <div class="mac-button close"></div>
+                <div class="mac-button minimize"></div>
+                <div class="mac-button expand"></div>
+            </div>
+            <div class="terminal-title">bash -- ezzulddin@noc-server:~</div>
+        </div>
+
+        <div class="terminal-body">
+            <div class="title-name">Ezzulddin Al-Sammarraie</div>
+            <div class="title-sub">Telecommunications Engineer | M.Sc. Student in Security Management @ UPB</div>
+
+            <div>
+                <span class="prompt">ezzulddin@noc:~$</span> <span class="command">cat info.txt</span>
+            </div>
+            <div class="output">
+                Location: Bucharest, Romania<br>
+                Focus: <span class="highlight">Network Operations (NOC), Linux Administration, DevOps</span>
+            </div>
+
+            <div>
+                <span class="prompt">ezzulddin@noc:~$</span> <span class="command">ls -la /open_source/</span>
+            </div>
+            <div class="output">
+                <ul>
+                    <li><span class="highlight">Canonical (LXD):</span> Resolved an async API race condition in Go by refactoring the HTTP Wait endpoint payloads.</li>
+                    <li><span class="highlight">LibreDesk:</span> Patched a Dark Mode UI bug for raw HTML rendering using Vue.js & Tailwind CSS.</li>
+                    <li><span class="highlight">LazyFTP:</span> Fixed core UI order-of-operation rendering logic in a Go-based Terminal interface.</li>
+                </ul>
+            </div>
+
+            <div>
+                <span class="prompt">ezzulddin@noc:~$</span> <span class="command">ping contacts</span>
+            </div>
+            <div class="output">
+                [<a href="https://github.com/IzzaldinSamir" target="_blank">GITHUB</a>] &nbsp;&nbsp;&nbsp; 
+                [<a href="https://linkedin.com/in/izzaldinsamir" target="_blank">LINKEDIN</a>] &nbsp;&nbsp;&nbsp; 
+                [<a href="mailto:izzaldinsamir@gmail.com">EMAIL</a>]
+            </div>
+
+            <div>
+                <span class="prompt">ezzulddin@noc:~$</span> <span class="cursor"></span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
