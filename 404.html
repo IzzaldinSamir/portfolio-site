@@ -13,8 +13,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh; /* Better for mobile browsers */
             margin: 0;
+            padding: 20px; /* Stops the box from touching the very edges of the screen */
+            box-sizing: border-box;
         }
         .terminal {
             border: 1px solid #FF003C;
@@ -22,6 +24,9 @@
             border-radius: 8px;
             box-shadow: 0 0 20px rgba(255, 0, 60, 0.2);
             text-align: center;
+            width: 100%;
+            max-width: 500px;
+            word-break: break-word; /* Forces long text to wrap instead of breaking the box */
         }
         .error {
             color: #FF003C;
@@ -32,15 +37,27 @@
         .text {
             color: #94A3B8;
             margin-bottom: 20px;
+            line-height: 1.5;
         }
         a {
             color: #00E5FF;
             text-decoration: none;
             border-bottom: 1px solid #00E5FF;
+            transition: all 0.2s ease;
         }
         a:hover {
             color: #fff;
             text-shadow: 0 0 8px #00E5FF;
+        }
+
+        /* --- MOBILE FIXES --- */
+        @media (max-width: 600px) {
+            .terminal {
+                padding: 25px 15px; /* Shrinks the padding so there's more room for text */
+            }
+            .error {
+                font-size: 2rem; /* Shrinks the giant error text so it fits perfectly */
+            }
         }
     </style>
 </head>
