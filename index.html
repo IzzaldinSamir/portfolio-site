@@ -13,11 +13,13 @@
             --bg-black: #000000;
             --term-bg: #050505;
             --text-main: #E2E8F0;
-            --text-muted: #94A3B8; /* Brightened to pass Lighthouse contrast checks */
+            --text-muted: #94A3B8;
             --neon-cyan: #00E5FF;
             --neon-pink: #FF0055;
             --neon-green: #00FF66;
             --border-color: #1E293B;
+            --git-merged: #a371f7; /* GitHub Purple */
+            --git-pending: #e3b341; /* GitHub Yellow */
         }
 
         * {
@@ -100,10 +102,6 @@
             margin-bottom: 25px;
         }
 
-        .highlight {
-            color: var(--neon-green);
-        }
-
         h1.title-name {
             font-size: 2.2rem;
             font-weight: 700;
@@ -131,8 +129,18 @@
             text-shadow: 0 0 8px var(--neon-cyan);
             outline: none;
         }
+
+        a.highlight {
+            color: var(--neon-green);
+            border-bottom: 1px solid var(--neon-green);
+        }
+
+        a.highlight:hover, a.highlight:focus {
+            color: #ffffff;
+            text-shadow: 0 0 8px var(--neon-green);
+            border-bottom: 1px solid #ffffff;
+        }
         
-        /* Accessibility focus state for keyboard navigation */
         a:focus-visible {
             outline: 2px solid var(--neon-pink);
             outline-offset: 4px;
@@ -144,7 +152,7 @@
         }
 
         li {
-            margin-bottom: 12px;
+            margin-bottom: 16px;
             position: relative;
             padding-left: 20px;
         }
@@ -155,6 +163,30 @@
             left: 0;
             color: var(--neon-pink);
             font-weight: bold;
+        }
+
+        /* --- Custom GitHub Badges --- */
+        .status {
+            display: inline-block;
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            margin-left: 6px;
+            border-radius: 4px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            vertical-align: middle;
+        }
+        .status.merged {
+            color: var(--git-merged);
+            border: 1px solid var(--git-merged);
+            background: rgba(163, 113, 247, 0.1);
+            box-shadow: 0 0 8px rgba(163, 113, 247, 0.2);
+        }
+        .status.pending {
+            color: var(--git-pending);
+            border: 1px solid var(--git-pending);
+            background: rgba(227, 179, 65, 0.1);
+            box-shadow: 0 0 8px rgba(227, 179, 65, 0.2);
         }
 
         .cursor {
@@ -178,9 +210,7 @@
 </head>
 <body>
 
-    <!-- Semantic main tag for Accessibility -->
     <main class="terminal-container">
-        <!-- aria-hidden stops screen readers from reading decorative terminal buttons -->
         <div class="terminal-header" aria-hidden="true">
             <div class="mac-buttons">
                 <div class="mac-button close"></div>
@@ -199,7 +229,7 @@
             </div>
             <div class="output">
                 Location: Bucharest, Romania<br>
-                Focus: <span class="highlight">Network Operations (NOC), Linux Administration, DevOps</span>
+                Focus: <span style="color: var(--neon-green)">Network Operations (NOC), Linux Administration, DevOps</span>
             </div>
 
             <div>
@@ -207,12 +237,17 @@
             </div>
             <div class="output">
                 <ul>
-                    <li><span class="highlight">AI Infrastructure (MCP):</span> Implemented secure HTTP error handling and Python regression tests to prevent credential leakage.</li>
-                    <li><span class="highlight">Kubernetes (kprompt):</span> Enforced strict resource-scaling validation in Go to prevent late-stage executor failures.</li>
-                    <li><span class="highlight">Canonical (LXD):</span> Resolved an async API race condition in Go by refactoring the HTTP Wait endpoint payloads.</li>
-                    <li><span class="highlight">LibreDesk:</span> Patched a Dark Mode UI bug for raw HTML rendering using Vue.js & Tailwind CSS.</li>
-                    <li><span class="highlight">LazyFTP:</span> Fixed core UI order-of-operation rendering logic in a Go-based Terminal interface.</li>
-                    <li><span class="highlight">Media Extraction Engine:</span> Rewrote a Go tool's memory allocation to stream 7GB+ payloads directly to disk, mitigating fatal OS-level OOM crashes.</li>
+                    <li><a href="https://github.com/JohannsenLum/canvas-api-mcp/pull/25" target="_blank" rel="noopener noreferrer" class="highlight">AI Infrastructure (MCP)</a>: Implemented secure HTTP error handling and Python regression tests to prevent credential leakage. <span class="status merged">MERGED</span></li>
+                    
+                    <li><a href="https://github.com/kprompt/kprompt/pull/113" target="_blank" rel="noopener noreferrer" class="highlight">Kubernetes (kprompt)</a>: Enforced strict resource-scaling validation in Go to prevent late-stage executor failures. <span class="status merged">MERGED</span></li>
+                    
+                    <li><a href="https://github.com/canonical/lxd/pull/18852" target="_blank" rel="noopener noreferrer" class="highlight">Canonical (LXD)</a>: Resolved an async API race condition in Go by refactoring the HTTP Wait endpoint payloads. <span class="status pending">IN REVIEW</span></li>
+                    
+                    <li><a href="https://github.com/abhinavxd/libredesk/pull/452" target="_blank" rel="noopener noreferrer" class="highlight">LibreDesk</a>: Patched a Dark Mode UI bug for raw HTML rendering using Vue.js & Tailwind CSS. <span class="status pending">IN REVIEW</span></li>
+                    
+                    <li><a href="https://github.com/MawCeron/lazyftp/pull/57" target="_blank" rel="noopener noreferrer" class="highlight">LazyFTP</a>: Fixed core UI order-of-operation rendering logic in a Go-based Terminal interface. <span class="status merged">MERGED</span></li>
+                    
+                    <li><a href="https://github.com/CuteTenshii/crunchyroll-downloader/pull/31" target="_blank" rel="noopener noreferrer" class="highlight">Media Extraction Engine</a>: Rewrote a Go tool's memory allocation to stream 7GB+ payloads directly to disk, mitigating fatal OS-level OOM crashes. <span class="status pending">IN REVIEW</span></li>
                 </ul>
             </div>
 
@@ -220,7 +255,6 @@
                 <span class="prompt" aria-hidden="true">ezzulddin@noc:~$</span> <span class="command">ping contacts</span>
             </div>
             <div class="output">
-                <!-- rel="noopener noreferrer" fixes the Best Practices security audit -->
                 [<a href="https://github.com/IzzaldinSamir" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">GITHUB</a>] &nbsp;&nbsp;&nbsp; 
                 [<a href="https://linkedin.com/in/izzaldinsamir" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">LINKEDIN</a>] &nbsp;&nbsp;&nbsp; 
                 [<a href="mailto:izzaldinsamir@gmail.com" aria-label="Send an email">EMAIL</a>]
