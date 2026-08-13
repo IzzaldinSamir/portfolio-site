@@ -203,8 +203,12 @@
         }
 
         @media (max-width: 600px) {
-            .terminal-body { padding: 20px; }
-            h1.title-name { font-size: 1.8rem; }
+            body { font-size: 0.85rem; } /* Shrinks all text slightly so it fits better */
+            .terminal-body { padding: 25px 15px; line-height: 1.6; }
+            h1.title-name { font-size: 1.5rem; }
+            h2.title-sub { font-size: 0.85rem; margin-bottom: 15px; }
+            .status { margin-top: 4px; } /* Ensures badges have space if they get pushed to a new line */
+            .terminal { padding: 20px; }
         }
     </style>
 </head>
