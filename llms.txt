@@ -1,9 +1,26 @@
 # Ezzulddin Al-Sammarraie
-> Telecommunications Engineer, NOC, and Systems Administrator based in Bucharest, Romania.
+> Telecommunications Engineer, Junior NOC, and DevOps / Systems Administrator based in Bucharest, Romania.
 
-This site serves as the digital portfolio for Ezzulddin. He specializes in Linux Administration, Bash scripting, Docker, and open-source infrastructure contributions (including Canonical LXD and LibreDesk).
+Digital portfolio and verified engineering proof-of-work for Ezzulddin. Specializes in Linux systems, Go, Bash scripting, containerized infrastructure (Docker), telemetry/monitoring (Prometheus/Grafana), and upstream open-source infrastructure development.
 
-## Professional Profiles
+## Profiles & Contact
+- Website: https://ezzulddin.com
+- GitHub: https://github.com/IzzaldinSamir
+- LinkedIn: https://linkedin.com/in/izzaldinsamir
 
-- [GitHub Profile](https://github.com/IzzaldinSamir)
-- [LinkedIn Profile](https://linkedin.com/in/izzaldinsamir)
+## Core Technical Stack
+- Systems & Containers: Linux (Ubuntu/Debian), Docker, Docker Compose, systemd, LXD
+- Networking & Telemetry: TCP/IP, MQTT, Prometheus, Grafana, Mosquitto, Wireshark / TShark, CCNA (in progress)
+- Programming & Scripting: Go, Bash, Python, HTML5/CSS3
+
+## Featured Open-Source Contributions
+- Canonical LXD (PR #18852): Fixed async API race condition in operation wait endpoint and aligned agent behavior (Go).
+- Linux Foundation FabricOps (PR #35): Added YAML serialization support for fabricopsctl status CLI (Go).
+- Canvas API MCP (PR #25): Hardened HTTP error handling and prevented credential token leakage (Python).
+- kprompt (PR #113): Implemented planner-level gatekeeper rejecting unsupported Kubernetes scale kinds (Go).
+- LazyFTP (PR #57): Fixed visible row boundary calculation in terminal UI processes panel (Go).
+- LibreDesk (PR #452): Resolved inline CSS dark mode text invisibility issue (Vue/SCSS).
+
+## Pinned Projects
+- IoT NOC Monitoring Lab (https://github.com/IzzaldinSamir/iot-noc-monitoring-lab): Multi-container Docker Compose observability stack featuring Mosquitto MQTT, Prometheus, Grafana, Go-based TCP/HTTP health checks, and ITIL L2 Wireshark triage runbooks.
+- Minimalist Terminal Portfolio (https://github.com/IzzaldinSamir/portfolio-site): Zero-framework, 100/100 Lighthouse performance portfolio deployed via Cloudflare Pages CI/CD.
