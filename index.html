@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ezzulddin Al-Sammarraie | Telecommunications Engineer, NOC, and Systems Administrator based in Bucharest.">
+    <link rel="canonical" href="https://ezzulddin.com/">
+
+    <!-- Open Graph / Social Preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ezzulddin.com/">
+    <meta property="og:title" content="Ezzulddin Al-Sammarraie // NOC & Systems Engineer">
+    <meta property="og:description" content="Telecommunications Engineer & Systems Administrator specializing in Linux, Docker, Go, and network observability.">
+
     <title>Ezzulddin.sys // Terminal</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -203,12 +211,11 @@
         }
 
         @media (max-width: 600px) {
-            body { font-size: 0.85rem; } /* Shrinks all text slightly so it fits better */
+            body { font-size: 0.85rem; }
             .terminal-body { padding: 25px 15px; line-height: 1.6; }
             h1.title-name { font-size: 1.5rem; }
             h2.title-sub { font-size: 0.85rem; margin-bottom: 15px; }
-            .status { margin-top: 4px; } /* Ensures badges have space if they get pushed to a new line */
-            .terminal { padding: 20px; }
+            .status { margin-top: 4px; }
         }
     </style>
 </head>
@@ -234,6 +241,13 @@
             <div class="output">
                 Location: Bucharest, Romania<br>
                 Focus: <span style="color: var(--neon-green)">Network Operations (NOC), Linux Administration, DevOps</span>
+            </div>
+
+            <div>
+                <span class="prompt" aria-hidden="true">ezzulddin@noc:~$</span> <span class="command">cat telemetry_lab.md</span>
+            </div>
+            <div class="output">
+                <a href="https://github.com/IzzaldinSamir/iot-noc-monitoring-lab" target="_blank" rel="noopener noreferrer" class="highlight">IoT NOC Monitoring Lab</a>: Multi-container observability stack (Docker, Mosquitto MQTT, Prometheus, Grafana) with custom Go health check probes and Wireshark L2 incident triage runbooks.
             </div>
 
             <div>
