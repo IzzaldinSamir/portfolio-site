@@ -4,25 +4,20 @@
 Digital portfolio and verified engineering proof-of-work for Ezzulddin. Specializes in Linux systems, Go, Bash scripting, containerized infrastructure (Docker), telemetry/monitoring (Prometheus/Grafana), and upstream open-source infrastructure development.
 
 ## Profiles & Contact
-- Website: https://ezzulddin.com
-- GitHub: https://github.com/IzzaldinSamir
-- LinkedIn: https://linkedin.com/in/izzaldinsamir
-
-## Core Technical Stack
-- Systems & Containers: Linux (Ubuntu/Debian), Docker, Docker Compose, systemd, LXD, Kubernetes
-- Networking & Telemetry: TCP/IP, MQTT, Prometheus, Grafana, Mosquitto, Wireshark / TShark, CCNA (in progress)
-- Programming & Scripting: Go, Bash, Python, HTML5/CSS3
-
-## Featured Open-Source Contributions
-- Linux Foundation FabricOps (PR #35 - Merged): Added YAML serialization support for fabricopsctl status CLI in Go.
-- Limusic Desktop (PR #58 - Merged): Implemented cross-platform webview zoom scaling controls in Tauri.
-- Kubernetes kprompt (PR #113 - Merged): Implemented planner-level gatekeeper rejecting unsupported Kubernetes scale kinds in Go.
-- Canvas API MCP (PR #25 - Merged): Hardened HTTP error handling and prevented credential token leakage in Python.
-- LazyFTP (PR #57 - Merged): Fixed visible row boundary calculation in terminal UI processes panel in Go.
-- Canonical LXD (PR #18852 - In Review): Resolved async API race condition in operation wait endpoint in Go.
-- LibreDesk (PR #452 - Approved/Queued): Resolved inline CSS dark mode text invisibility issue in Vue/SCSS.
-- Crunchyroll Downloader (PR #31 - In Review): Rewrote memory allocation in Go to stream 7GB+ payloads directly to disk without OOM.
+- [Portfolio Website](https://ezzulddin.com): Personal terminal portfolio and verified contributions.
+- [GitHub Profile](https://github.com/IzzaldinSamir): Upstream open-source repositories and infrastructure labs.
+- [LinkedIn Profile](https://linkedin.com/in/izzaldinsamir): Professional network and background.
 
 ## Pinned Projects
-- IoT NOC Monitoring Lab (https://github.com/IzzaldinSamir/iot-noc-monitoring-lab): Multi-container Docker Compose observability stack featuring Mosquitto MQTT, Prometheus, Grafana, Go-based TCP/HTTP health checks, and ITIL L2 Wireshark triage runbooks.
-- Minimalist Terminal Portfolio (https://github.com/IzzaldinSamir/portfolio-site): Zero-framework, 100/100 Lighthouse performance portfolio deployed via Cloudflare Pages CI/CD.
+- [IoT NOC Monitoring Lab](https://github.com/IzzaldinSamir/iot-noc-monitoring-lab): Multi-container Docker Compose observability stack featuring Mosquitto MQTT, Prometheus, Grafana, Go-based TCP/HTTP health checks, and ITIL L2 Wireshark triage runbooks.
+- [Portfolio Source Code](https://github.com/IzzaldinSamir/portfolio-site): Zero-framework, 100/100 Lighthouse performance portfolio deployed via Cloudflare Pages CI/CD.
+
+## Featured Open-Source Contributions
+- [Linux Foundation FabricOps #35](https://github.com/LF-Decentralized-Trust-labs/FabricOps/pull/35): Added YAML serialization support for fabricopsctl status CLI in Go (Merged).
+- [Desktop Audio Engine limusic #58](https://github.com/SimoHypers/limusic/pull/58): Implemented cross-platform webview zoom scaling controls in Tauri (Merged).
+- [Kubernetes Automation kprompt #113](https://github.com/kprompt/kprompt/pull/113): Implemented planner-level gatekeeper rejecting unsupported Kubernetes scale kinds in Go (Merged).
+- [AI Infrastructure Canvas API #25](https://github.com/JohannsenLum/canvas-api-mcp/pull/25): Hardened HTTP error handling and prevented credential token leakage in Python (Merged).
+- [Terminal UI LazyFTP #57](https://github.com/MawCeron/lazyftp/pull/57): Fixed visible row boundary calculation in terminal UI processes panel in Go (Merged).
+- [Canonical LXD #18852](https://github.com/canonical/lxd/pull/18852): Resolved async API race condition in operation wait endpoint in Go (In Review).
+- [LibreDesk #452](https://github.com/abhinavxd/libredesk/pull/452): Resolved inline CSS dark mode text invisibility issue in Vue/SCSS (Approved/Queued).
+- [Media Extraction Engine #31](https://github.com/CuteTenshii/crunchyroll-downloader/pull/31): Rewrote memory allocation in Go to stream 7GB+ payloads directly to disk without OOM (In Review).
