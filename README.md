@@ -1,11 +1,31 @@
-# Ezzulddin.sys // Terminal Portfolio
+# Ezzulddin.sys // Minimalist Terminal Portfolio
 
-This repository contains the source code for my personal portfolio website, designed with a high-contrast, minimalist terminal aesthetic. 
+> High-performance, zero-framework personal terminal portfolio for Ezzulddin Al-Sammarraie. Deployed globally on the edge via Cloudflare Pages.
 
-🌐 **Live Site:** [ezzulddin.com](https://ezzulddin.com)
+[![Lighthouse Performance](https://img.shields.io/badge/Lighthouse-100%2F100-00FF66?style=flat-square&logo=googlechrome&logoColor=black)](https://ezzulddin.com)
+[![Cloudflare Pages](https://img.shields.io/badge/Cloudflare_Pages-Active-F38020?style=flat-square&logo=cloudflare&logoColor=white)](https://ezzulddin.com)
+[![HTML5](https://img.shields.io/badge/Stack-HTML5%20%7C%20CSS3-E34F26?style=flat-square&logo=html5&logoColor=white)](https://ezzulddin.com)
 
-### ⚙️ Architecture & Deployment
-* **Frontend:** Pure HTML5 & CSS3 (Zero heavy frameworks, highly optimized for speed).
-* **Hosting:** Deployed on the global edge via **Cloudflare Pages**.
-* **CI/CD Pipeline:** Fully automated deployments. Pushing to the `main` branch on this repository instantly triggers a Cloudflare build to update the live site.
-* **Typography:** JetBrains Mono.
+🌐 **Live Production:** [ezzulddin.com](https://ezzulddin.com)
+
+---
+
+## ⚡ Engineering & Architecture Highlights
+
+- **Zero-Framework Architecture:** Handcrafted semantic HTML5 and vanilla CSS3 with zero heavy client-side JavaScript dependencies.
+- **100/100 Google Lighthouse:** Verified top-tier scores across Performance, Accessibility, Best Practices, and SEO.
+- **QD-OLED Terminal Aesthetic:** Custom high-contrast dark theme with glowing neon status indicators and mobile viewport scaling.
+- **Edge CI/CD Pipeline:** Automated continuous deployment on Cloudflare Pages triggered on every `git push` to `main`.
+- **Agentic AI Ready:** Standard-compliant `llms.txt` and `robots.txt` implementation for structured machine-readable indexing.
+
+---
+
+## 📂 Repository Layout
+
+```text
+├── index.html       # Primary terminal UI & verified contribution feed
+├── 404.html         # Custom terminal fallback page for broken routes
+├── llms.txt         # Structured engineering summary for AI web agents
+├── robots.txt       # Search engine crawler policies
+├── SECURITY.md      # Vulnerability disclosure policy
+└── README.md        # Repository documentation & architecture
