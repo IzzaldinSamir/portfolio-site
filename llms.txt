@@ -9,6 +9,7 @@ Digital portfolio and verified engineering proof-of-work for Ezzulddin. Speciali
 - [LinkedIn Profile](https://linkedin.com/in/izzaldinsamir): Professional network and background.
 
 ## Pinned Projects
+- [OSS Order Fulfilment Lab](https://github.com/IzzaldinSamir/oss-order-fulfilment-lab): Telecom OSS service-order provisioning workflow in Java 21 featuring JDBC/PostgreSQL persistence, SOAP inventory integration, JUnit 5 test suite (74.9% coverage), Docker Compose, and L1/L2 operations runbook.
 - [IoT NOC Monitoring Lab](https://github.com/IzzaldinSamir/iot-noc-monitoring-lab): Multi-container Docker Compose observability stack featuring Mosquitto MQTT, Prometheus, Grafana, Go-based TCP/HTTP health checks, and ITIL L2 Wireshark triage runbooks.
 - [Portfolio Source Code](https://github.com/IzzaldinSamir/portfolio-site): Zero-framework, 100/100 Lighthouse performance portfolio deployed via Cloudflare Pages CI/CD.
 
