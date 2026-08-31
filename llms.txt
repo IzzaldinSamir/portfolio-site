@@ -22,4 +22,4 @@ Digital portfolio and verified engineering proof-of-work for Ezzulddin. Speciali
 - [Security CLI Engine NexGuard #67](https://github.com/reach-x/nexguard/pull/67): Added JSON output serialization flag to quarantine CLI commands in Go (In Review).
 - [Canonical LXD #18852](https://github.com/canonical/lxd/pull/18852): Resolved async API race condition in operation wait endpoint in Go (In Review).
 - [LibreDesk #452](https://github.com/abhinavxd/libredesk/pull/452): Resolved inline CSS dark mode text invisibility issue in Vue/SCSS (Approved/Queued).
-- [Media Extraction Engine #31](https://github.com/CuteTenshii/crunchyroll-downloader/pull/31): Rewrote memory allocation in Go to stream 7GB+ payloads directly to disk without OOM (In Review).
+- [Media Extraction Engine #31](https://github.com/CuteTenshii/crunchyroll-downloader/pull/31): Rewrote memory allocation in Go to stream 7GB+ payloads directly to disk without OOM (Merged).
