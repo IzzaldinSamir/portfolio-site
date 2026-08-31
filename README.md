@@ -18,6 +18,7 @@
 - **Accessible by Default:** Keyboard skip navigation, visible focus states, and reduced-motion support respect visitor preferences without adding JavaScript.
 - **Social-Ready Sharing:** Custom Open Graph and X card metadata presents a cohesive terminal-themed preview when the portfolio is shared.
 - **Search Discovery:** An XML sitemap and crawler policy make the canonical portfolio URL easy for search engines to discover.
+- **Terminal Identity:** A custom, dependency-free SVG favicon carries the terminal aesthetic into browser tabs.
 - **Edge CI/CD Pipeline:** Automated continuous deployment on Cloudflare Pages triggered on every `git push` to `main`.
 - **Agentic AI Ready:** Standard-compliant `llms.txt` and `robots.txt` implementation for structured machine-readable indexing.
 
@@ -29,6 +30,7 @@
 ├── index.html       # Primary terminal UI & verified contribution feed
 ├── 404.html         # Custom terminal fallback page for broken routes
 ├── assets/           # Social-sharing image assets
+├── favicon.svg       # Terminal-inspired browser tab icon
 ├── llms.txt         # Structured engineering summary for AI web agents
 ├── robots.txt       # Search engine crawler policies
 ├── sitemap.xml      # Canonical URL discovery for search engines
