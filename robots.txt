@@ -10,3 +10,5 @@ Allow: /
 
 User-agent: PerplexityBot
 Allow: /
+
+Sitemap: https://ezzulddin.com/sitemap.xml
