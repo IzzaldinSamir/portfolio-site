@@ -14,7 +14,7 @@ Digital portfolio and verified engineering proof-of-work for Ezzulddin. Speciali
 - [Portfolio Source Code](https://github.com/IzzaldinSamir/portfolio-site): Zero-framework, 100/100 Lighthouse performance portfolio deployed via Cloudflare Pages CI/CD.
 
 ## Featured Open-Source Contributions
-- [Linux Foundation FabricOps #35](https://github.com/LF-Decentralized-Trust-labs/FabricOps/pull/35): Added YAML serialization support for fabricopsctl status CLI in Go (Merged).
+- [Linux Foundation FabricOps #35](https://github.com/LF-Decentralized-Trust-labs/FabricOps/pull/35): Added YAML serialization support for fabricopsctl status CLI in Go (Shipped in v0.2.1).
 - [Desktop Audio Engine limusic #58](https://github.com/SimoHypers/limusic/pull/58): Implemented cross-platform webview zoom scaling controls in Tauri (Merged).
 - [Kubernetes Automation kprompt #113](https://github.com/kprompt/kprompt/pull/113): Implemented planner-level gatekeeper rejecting unsupported Kubernetes scale kinds in Go (Merged).
 - [AI Infrastructure Canvas API #25](https://github.com/JohannsenLum/canvas-api-mcp/pull/25): Hardened HTTP error handling and prevented credential token leakage in Python (Merged).
