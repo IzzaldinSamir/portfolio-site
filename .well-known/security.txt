@@ -1,0 +1,5 @@
+Contact: mailto:izzaldinsamir@gmail.com
+Expires: 2027-09-03T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://ezzulddin.com/.well-known/security.txt
+Policy: https://github.com/IzzaldinSamir/portfolio-site/blob/main/SECURITY.md
