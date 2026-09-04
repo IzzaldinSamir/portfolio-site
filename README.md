@@ -16,6 +16,7 @@
 - **100/100 Google Lighthouse:** Verified top-tier scores across Performance, Accessibility, Best Practices, and SEO.
 - **QD-OLED Terminal Aesthetic:** Custom high-contrast dark theme with glowing neon status indicators and mobile viewport scaling.
 - **Accessible by Default:** Keyboard skip navigation, visible focus states, and reduced-motion support respect visitor preferences without adding JavaScript.
+- **Navigable Semantics:** Screen-reader users can jump directly between profile, labs, contributions, and contact sections while the terminal UI remains visually minimal.
 - **Social-Ready Sharing:** Custom Open Graph and X card metadata presents a cohesive terminal-themed preview when the portfolio is shared.
 - **Search Discovery:** An XML sitemap and crawler policy make the canonical portfolio URL easy for search engines to discover.
 - **Structured Profile Data:** Schema.org `Person` metadata connects professional identity, specialties, and verified public profiles for search engines.

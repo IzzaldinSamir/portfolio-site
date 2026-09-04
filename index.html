@@ -169,6 +169,18 @@
             margin-bottom: 25px;
         }
 
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
         h1.title-name {
             font-size: 2.2rem;
             font-weight: 700;
@@ -177,10 +189,10 @@
             letter-spacing: -1px;
         }
 
-        h2.title-sub {
+        .title-sub {
             color: var(--text-muted);
             font-size: 1rem;
-            margin-bottom: 20px;
+            margin: 0.83em 0 20px;
             font-weight: 400;
         }
 
@@ -273,7 +285,7 @@
             body { font-size: 0.85rem; }
             .terminal-body { padding: 25px 15px; line-height: 1.6; }
             h1.title-name { font-size: 1.5rem; }
-            h2.title-sub { font-size: 0.85rem; margin-bottom: 15px; }
+            .title-sub { font-size: 0.85rem; margin-bottom: 15px; }
             .status { margin-top: 4px; }
         }
 
@@ -303,31 +315,39 @@
 
         <div class="terminal-body">
             <h1 class="title-name">Ezzulddin Al-Sammarraie</h1>
-            <h2 class="title-sub">Telecommunications Engineer | M.Sc. Student in Security Management @ UPB</h2>
+            <p class="title-sub">Telecommunications Engineer | M.Sc. Student in Security Management @ UPB</p>
 
-            <div>
-                <span class="prompt" aria-hidden="true">ezzulddin@noc:~$</span> <span class="command">cat info.txt</span>
-            </div>
-            <div class="output">
-                Location: Bucharest, Romania<br>
-                Focus: <span style="color: var(--neon-green)">Network Operations (NOC), Linux Administration, DevOps</span>
-            </div>
+            <section aria-labelledby="profile-heading">
+                <h2 id="profile-heading" class="sr-only">Professional profile</h2>
+                <div>
+                    <span class="prompt" aria-hidden="true">ezzulddin@noc:~$</span> <span class="command">cat info.txt</span>
+                </div>
+                <div class="output">
+                    Location: Bucharest, Romania<br>
+                    Focus: <span style="color: var(--neon-green)">Network Operations (NOC), Linux Administration, DevOps</span>
+                </div>
+            </section>
 
-            <div>
-                <span class="prompt" aria-hidden="true">ezzulddin@noc:~$</span> <span class="command">cat labs.txt</span>
-            </div>
-            <div class="output">
-                <ul>
-                    <li><a href="https://github.com/IzzaldinSamir/oss-order-fulfilment-lab" target="_blank" rel="noopener noreferrer" class="highlight">OSS Order Fulfilment Lab</a>: Telecom OSS service-order provisioning workflow in Java 21 with PostgreSQL persistence, SOAP inventory integration, JUnit 5 test suite (74.9% coverage), and L1/L2 operations runbook.</li>
-                    <li><a href="https://github.com/IzzaldinSamir/iot-noc-monitoring-lab" target="_blank" rel="noopener noreferrer" class="highlight">IoT NOC Monitoring Lab</a>: Multi-container observability stack (Docker, Mosquitto MQTT, Prometheus, Grafana) with custom Go health check probes and Wireshark L2 incident triage runbooks.</li>
-                </ul>
-            </div>
+            <section aria-labelledby="labs-heading">
+                <h2 id="labs-heading" class="sr-only">Selected labs</h2>
+                <div>
+                    <span class="prompt" aria-hidden="true">ezzulddin@noc:~$</span> <span class="command">cat labs.txt</span>
+                </div>
+                <div class="output">
+                    <ul>
+                        <li><a href="https://github.com/IzzaldinSamir/oss-order-fulfilment-lab" target="_blank" rel="noopener noreferrer" class="highlight">OSS Order Fulfilment Lab</a>: Telecom OSS service-order provisioning workflow in Java 21 with PostgreSQL persistence, SOAP inventory integration, JUnit 5 test suite (74.9% coverage), and L1/L2 operations runbook.</li>
+                        <li><a href="https://github.com/IzzaldinSamir/iot-noc-monitoring-lab" target="_blank" rel="noopener noreferrer" class="highlight">IoT NOC Monitoring Lab</a>: Multi-container observability stack (Docker, Mosquitto MQTT, Prometheus, Grafana) with custom Go health check probes and Wireshark L2 incident triage runbooks.</li>
+                    </ul>
+                </div>
+            </section>
 
-            <div>
-                <span class="prompt" aria-hidden="true">ezzulddin@noc:~$</span> <span class="command">ls -la /open_source/</span>
-            </div>
-            <div class="output">
-                <ul>
+            <section aria-labelledby="contributions-heading">
+                <h2 id="contributions-heading" class="sr-only">Open source contributions</h2>
+                <div>
+                    <span class="prompt" aria-hidden="true">ezzulddin@noc:~$</span> <span class="command">ls -la /open_source/</span>
+                </div>
+                <div class="output">
+                    <ul>
                     <li><a href="https://github.com/LF-Decentralized-Trust-labs/FabricOps/pull/35" target="_blank" rel="noopener noreferrer" class="highlight">Linux Foundation (FabricOps)</a>: Implemented YAML serialization for Kubernetes-native status reporting in Go (Shipped in v0.2.1). <span class="status merged">MERGED</span></li>
 
                     <li><a href="https://github.com/SimoHypers/limusic/pull/58" target="_blank" rel="noopener noreferrer" class="highlight">Desktop Audio Engine (limusic)</a>: Implemented cross-platform webview zoom scaling controls in Tauri for high-DPI displays. <span class="status merged">MERGED</span></li>
@@ -345,17 +365,21 @@
                     <li><a href="https://github.com/abhinavxd/libredesk/pull/452" target="_blank" rel="noopener noreferrer" class="highlight">LibreDesk</a>: Patched a Dark Mode UI bug for raw HTML rendering using Vue.js & Tailwind CSS. <span class="status pending">IN REVIEW</span></li>
                     
                     <li><a href="https://github.com/CuteTenshii/crunchyroll-downloader/pull/31" target="_blank" rel="noopener noreferrer" class="highlight">Media Extraction Engine</a>: Rewrote memory allocation in Go to stream 7GB+ payloads directly to disk, mitigating OS-level OOM crashes (Shipped in v1.3.0). <span class="status merged">MERGED</span></li>
-                </ul>
-            </div>
+                    </ul>
+                </div>
+            </section>
 
-            <div>
-                <span class="prompt" aria-hidden="true">ezzulddin@noc:~$</span> <span class="command">ping contacts</span>
-            </div>
-            <nav class="output" aria-label="Contact links">
-                [<a href="https://github.com/IzzaldinSamir" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">GITHUB</a>] &nbsp;&nbsp;&nbsp; 
-                [<a href="https://linkedin.com/in/izzaldinsamir" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">LINKEDIN</a>] &nbsp;&nbsp;&nbsp; 
-                [<a href="mailto:izzaldinsamir@gmail.com" aria-label="Send an email">EMAIL</a>]
-            </nav>
+            <section aria-labelledby="contact-heading">
+                <h2 id="contact-heading" class="sr-only">Contact</h2>
+                <div>
+                    <span class="prompt" aria-hidden="true">ezzulddin@noc:~$</span> <span class="command">ping contacts</span>
+                </div>
+                <nav class="output" aria-label="Contact links">
+                    [<a href="https://github.com/IzzaldinSamir" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">GITHUB</a>] &nbsp;&nbsp;&nbsp;
+                    [<a href="https://linkedin.com/in/izzaldinsamir" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">LINKEDIN</a>] &nbsp;&nbsp;&nbsp;
+                    [<a href="mailto:izzaldinsamir@gmail.com" aria-label="Send an email">EMAIL</a>]
+                </nav>
+            </section>
 
             <div>
                 <span class="prompt" aria-hidden="true">ezzulddin@noc:~$</span> <span class="cursor" aria-hidden="true"></span>
