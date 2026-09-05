@@ -41,3 +41,25 @@
 ├── sitemap.xml      # Canonical URL discovery for search engines
 ├── SECURITY.md      # Vulnerability disclosure policy
 └── README.md        # Repository documentation & architecture
+```
+
+## Local Preview
+
+No build step or package installation is needed. From the repository root, use Python 3 to serve the static files on your computer:
+
+```sh
+python -m http.server 8000 --bind 127.0.0.1
+```
+
+On Windows, use `py` instead of `python` if that is how Python is installed. Open [http://127.0.0.1:8000/](http://127.0.0.1:8000/) and press `Ctrl+C` in the terminal when finished.
+
+Use this HTTP preview instead of opening `index.html` directly: root-relative paths such as `/favicon.svg` and the 404 page's home link need a server root to resolve correctly.
+
+Before publishing a change:
+
+- Check the homepage at desktop and narrow mobile widths.
+- Use `Tab` to check the skip link and link focus indicators.
+- Open `/404.html` to preview the error page and test its home link. Python's server uses its own response for missing URLs; the custom error routing must be checked on Cloudflare Pages.
+- Run `git diff --check` to catch whitespace errors, then review the diff.
+
+Pushing to `main` triggers the existing Cloudflare Pages deployment. After deployment, check the live site to confirm the update is served.
