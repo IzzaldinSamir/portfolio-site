@@ -21,6 +21,7 @@
 - **Search Discovery:** An XML sitemap and crawler policy make the canonical portfolio URL easy for search engines to discover.
 - **Structured Profile Data:** Schema.org `Person` metadata connects professional identity, specialties, and verified public profiles for search engines.
 - **Security Reporting:** A standard `/.well-known/security.txt` endpoint directs responsible disclosure reports to the published security policy.
+- **Hardened Delivery:** Cloudflare Pages applies transport, content, clickjacking, MIME-sniffing, referrer, and browser-permission protections.
 - **Terminal Identity:** A custom, dependency-free SVG favicon carries the terminal aesthetic into browser tabs.
 - **Edge CI/CD Pipeline:** Automated continuous deployment on Cloudflare Pages triggered on every `git push` to `main`.
 - **Agentic AI Ready:** Standard-compliant `llms.txt` and `robots.txt` implementation for structured machine-readable indexing.
@@ -34,6 +35,7 @@
 ├── 404.html         # Custom terminal fallback page for broken routes
 ├── .well-known/
 │   └── security.txt # Standard security-contact endpoint
+├── _headers          # Cloudflare response security headers
 ├── assets/           # Social-sharing image assets
 ├── favicon.svg       # Terminal-inspired browser tab icon
 ├── llms.txt         # Structured engineering summary for AI web agents
