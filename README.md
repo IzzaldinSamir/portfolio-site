@@ -23,6 +23,7 @@
 - **Security Reporting:** A standard `/.well-known/security.txt` endpoint directs responsible disclosure reports to the published security policy.
 - **Hardened Delivery:** Cloudflare Pages applies transport, content, clickjacking, MIME-sniffing, referrer, and browser-permission protections.
 - **Terminal Identity:** A custom, dependency-free SVG favicon carries the terminal aesthetic into browser tabs.
+- **Install Metadata:** A web app manifest preserves the portfolio's terminal identity when saved to a device home screen.
 - **Edge CI/CD Pipeline:** Automated continuous deployment on Cloudflare Pages triggered on every `git push` to `main`.
 - **Agentic AI Ready:** Standard-compliant `llms.txt` and `robots.txt` implementation for structured machine-readable indexing.
 
@@ -40,6 +41,7 @@
 ├── favicon.svg       # Terminal-inspired browser tab icon
 ├── llms.txt         # Structured engineering summary for AI web agents
 ├── robots.txt       # Search engine crawler policies
+├── site.webmanifest # Install and home-screen metadata
 ├── sitemap.xml      # Canonical URL discovery for search engines
 ├── SECURITY.md      # Vulnerability disclosure policy
 └── README.md        # Repository documentation & architecture
