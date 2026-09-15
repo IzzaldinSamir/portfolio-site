@@ -5,3 +5,6 @@
   X-Frame-Options: DENY
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), geolocation=(), microphone=()
+
+/assets/social-preview-v2.png
+  Cache-Control: public, max-age=31536000, immutable
