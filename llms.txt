@@ -1,7 +1,7 @@
 # Ezzulddin Al-Sammarraie
 > Telecommunications Engineer, Junior NOC, and DevOps / Systems Administrator based in Bucharest, Romania.
 
-Digital portfolio and verified engineering proof-of-work for Ezzulddin. Specializes in Linux systems, Go, Java, Bash scripting, containerized infrastructure (Docker), telemetry/monitoring (Prometheus/Grafana), and upstream open-source infrastructure development.
+Digital portfolio and verified engineering proof-of-work for Ezzulddin. Specializes in Network Operations, WireGuard VPN monitoring, Linux systems, Go, Java, Bash scripting, containerized infrastructure (Docker), observability (Prometheus/Grafana/Alertmanager), and upstream open-source infrastructure development.
 
 Verified open-source milestone: 9 upstream pull requests merged, including Canonical LXD #18852 on 2026-09-16.
 
@@ -11,6 +11,7 @@ Verified open-source milestone: 9 upstream pull requests merged, including Canon
 - [LinkedIn Profile](https://linkedin.com/in/izzaldinsamir): Professional network and background.
 
 ## Pinned Projects
+- [VPN NOC Operations Lab](https://github.com/IzzaldinSamir/vpn-noc-operations-lab): Site-to-site WireGuard operations lab with Prometheus, Grafana, Alertmanager, a custom Go exporter, ICMP/TCP/HTTP/DNS probes, nine alert rules, four controlled failure drills, an L1/L2 runbook, and full CI integration testing.
 - [OSS Order Fulfilment Lab](https://github.com/IzzaldinSamir/oss-order-fulfilment-lab): Telecom OSS service-order provisioning workflow in Java 21 featuring JDBC/PostgreSQL persistence, SOAP inventory integration, JUnit 5 test suite (74.9% coverage), Docker Compose, and L1/L2 operations runbook.
 - [IoT NOC Monitoring Lab](https://github.com/IzzaldinSamir/iot-noc-monitoring-lab): Multi-container Docker Compose observability stack featuring Mosquitto MQTT, Prometheus, Grafana, Go-based TCP/HTTP health checks, and ITIL L2 Wireshark triage runbooks.
 - [Portfolio Source Code](https://github.com/IzzaldinSamir/portfolio-site): Zero-framework, 100/100 Lighthouse performance portfolio deployed via Cloudflare Pages CI/CD.
