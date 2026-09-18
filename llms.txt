@@ -3,7 +3,7 @@
 
 Digital portfolio and verified engineering proof-of-work for Ezzulddin. Specializes in Network Operations, WireGuard VPN monitoring, Linux systems, Go, Java, Bash scripting, containerized infrastructure (Docker), observability (Prometheus/Grafana/Alertmanager), and upstream open-source infrastructure development.
 
-Verified open-source milestone: 10 upstream pull requests merged, including Canonical LXD #18852 on 2026-09-16.
+Verified open-source milestone: 11 upstream pull requests merged, including Canonical LXD #18852 and Kestra kestractl #165.
 
 ## Profiles & Contact
 - [Portfolio Website](https://ezzulddin.com): Personal terminal portfolio and verified contributions.
@@ -24,7 +24,7 @@ Verified open-source milestone: 10 upstream pull requests merged, including Cano
 - [Terminal UI LazyFTP #57](https://github.com/MawCeron/lazyftp/pull/57): Fixed visible row boundary calculation in terminal UI processes panel in Go (Merged).
 - [SQL Engine go-mysql-server #3850](https://github.com/dolthub/go-mysql-server/pull/3850): Replaced runtime binary-collation name checks with explicit metadata and added regression coverage across the collation table (In Review).
 - [Security CLI Engine NexGuard #67](https://github.com/jbrahy/nexguard/pull/67): Added scriptable JSON output to quarantine listings, including stable empty-array output and regression coverage (Merged).
-- [Workflow Orchestration CLI kestractl #165](https://github.com/kestra-io/kestractl/pull/165): Added regression coverage locking bulk-update deletion to its safe opt-in default after the upstream behavior fix (In Review).
+- [Workflow Orchestration CLI kestractl #165](https://github.com/kestra-io/kestractl/pull/165): Added regression coverage locking bulk-update deletion to its safe opt-in default after the upstream behavior fix (Merged).
 - [Template Tooling viber #12](https://github.com/abits/viber/pull/12): Hardened remote template archive loading against unsafe paths and oversized extraction, with regression coverage (Merged).
 - [Canonical LXD #18852](https://github.com/canonical/lxd/pull/18852): Corrected operation-wait failure, timeout, and cancellation semantics across the LXD daemon and agent, with regression coverage across affected integration suites (Merged).
 - [Canonical LXD #19078](https://github.com/canonical/lxd/pull/19078): Added regression coverage ensuring restricted project operators retain instance root-volume visibility when custom storage volumes are shared (In Review).
