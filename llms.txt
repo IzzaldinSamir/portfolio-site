@@ -3,7 +3,7 @@
 
 Digital portfolio and verified engineering proof-of-work for Ezzulddin. Specializes in Network Operations, WireGuard VPN monitoring, Linux systems, Go, Java, Bash scripting, containerized infrastructure (Docker), observability (Prometheus/Grafana/Alertmanager), and upstream open-source infrastructure development.
 
-Verified open-source milestone: 11 upstream pull requests merged, including Canonical LXD #18852 and Kestra kestractl #165.
+Verified open-source milestone: 12 upstream pull requests merged, including Canonical LXD #18852 and Kestra kestractl #165.
 
 ## Profiles & Contact
 - [Portfolio Website](https://ezzulddin.com): Personal terminal portfolio and verified contributions.
@@ -27,7 +27,7 @@ Verified open-source milestone: 11 upstream pull requests merged, including Cano
 - [Workflow Orchestration CLI kestractl #165](https://github.com/kestra-io/kestractl/pull/165): Added regression coverage locking bulk-update deletion to its safe opt-in default after the upstream behavior fix (Merged).
 - [Template Tooling viber #12](https://github.com/abits/viber/pull/12): Hardened remote template archive loading against unsafe paths and oversized extraction, with regression coverage (Merged).
 - [Canonical LXD #18852](https://github.com/canonical/lxd/pull/18852): Corrected operation-wait failure, timeout, and cancellation semantics across the LXD daemon and agent, with regression coverage across affected integration suites (Merged).
-- [Canonical LXD #19078](https://github.com/canonical/lxd/pull/19078): Added regression coverage ensuring restricted project operators retain instance root-volume visibility when custom storage volumes are shared (In Review).
+- [Canonical LXD #19078](https://github.com/canonical/lxd/pull/19078): Added regression coverage ensuring restricted project operators retain instance root-volume visibility when custom storage volumes are shared (Merged).
 - [Canonical LXD #19083](https://github.com/canonical/lxd/pull/19083): Updated the VM guest agent to preserve existing template file permissions while retaining secure defaults for new files, with regression coverage for overwrite and create-only paths (In Review).
 - [LibreDesk #452](https://github.com/abhinavxd/libredesk/pull/452): Scoped incoming HTML email content to a light canvas in dark mode using Vue and SCSS/Tailwind utilities, preserving inline sender colours and readability (Merged; shipped in v2.9.0-rc.8).
 - [Media Extraction Engine #31](https://github.com/CuteTenshii/crunchyroll-downloader/pull/31): Rewrote memory allocation in Go to stream 7GB+ payloads directly to disk without OOM (Merged).
