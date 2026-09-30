@@ -3,7 +3,7 @@
 
 Digital portfolio and verified engineering proof-of-work for Ezzulddin. Specializes in Network Operations, WireGuard VPN monitoring, Linux systems, Go, Java, Bash scripting, containerized infrastructure (Docker), observability (Prometheus/Grafana/Alertmanager), and upstream open-source infrastructure development.
 
-Verified open-source milestone: 12 upstream pull requests merged, including Canonical LXD #18852 and Kestra kestractl #165.
+Verified open-source milestone: 13 upstream contributions merged, including Canonical LXD #18852, Kestra kestractl #165, and go-mysql-server #3850 carried forward into #3961 with original authorship preserved.
 
 ## Profiles & Contact
 - [Portfolio Website](https://ezzulddin.com): Personal terminal portfolio and verified contributions.
@@ -22,7 +22,7 @@ Verified open-source milestone: 12 upstream pull requests merged, including Cano
 - [Kubernetes Automation kprompt #113](https://github.com/kprompt/kprompt/pull/113): Implemented planner-level gatekeeper rejecting unsupported Kubernetes scale kinds in Go (Merged).
 - [AI Infrastructure Canvas API #25](https://github.com/JohannsenLum/canvas-api-mcp/pull/25): Hardened HTTP error handling and prevented credential token leakage in Python (Merged).
 - [Terminal UI LazyFTP #57](https://github.com/MawCeron/lazyftp/pull/57): Fixed visible row boundary calculation in terminal UI processes panel in Go (Merged).
-- [SQL Engine go-mysql-server #3850](https://github.com/dolthub/go-mysql-server/pull/3850): Replaced runtime binary-collation name checks with explicit metadata and added regression coverage across the collation table (In Review).
+- [SQL Engine go-mysql-server #3850](https://github.com/dolthub/go-mysql-server/pull/3850): Replaced runtime binary-collation name checks with explicit metadata and added regression coverage across the collation table (Merged via [#3961](https://github.com/dolthub/go-mysql-server/pull/3961), with original authorship preserved).
 - [Security CLI Engine NexGuard #67](https://github.com/jbrahy/nexguard/pull/67): Added scriptable JSON output to quarantine listings, including stable empty-array output and regression coverage (Merged).
 - [Workflow Orchestration CLI kestractl #165](https://github.com/kestra-io/kestractl/pull/165): Added regression coverage locking bulk-update deletion to its safe opt-in default after the upstream behavior fix (Merged).
 - [Template Tooling viber #12](https://github.com/abits/viber/pull/12): Hardened remote template archive loading against unsafe paths and oversized extraction, with regression coverage (Merged).
